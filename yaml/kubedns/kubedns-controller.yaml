@@ -89,7 +89,7 @@ spec:
         - --dns-port=10053
         - --config-dir=/kube-dns-config
         - --v=2
-        - --kube-master-url=http://10.0.0.55:8080
+        - --kube-master-url=http://192.168.0.55:8080
         env:
         - name: PROMETHEUS_PORT
           value: "10055"

@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ReplicationController
+
+metadata:
+    name: mysql
+    namespace: db
+
+spec:
+    replicas: 1
+    selector:
+        app: mysql
+    template:
+        metadata:
+            labels:
+                app: mysql
+        spec:
+            containers:
+            - name: mysql
+              image: img.rulin.me/library/mysql:5.7.20
+              ports:
+              - containerPort: 3306
+              env:
+              - name:  "MYSQL_RUN_USER"
+                value: "mysql"
+
