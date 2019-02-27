@@ -1,6 +1,5 @@
 FROM daocloud.io/centos:7
 
-#作者信息
 LABEL MAINTAINER=1275035607@qq.com
 
 #定位时区
