@@ -1,4 +1,3 @@
-#指定基础镜像
 FROM docker.io/alpine:3.7
 
 #拷贝files目录到容器的根目录下面
